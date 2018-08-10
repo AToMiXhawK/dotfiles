@@ -6,7 +6,7 @@ yellow='tput setaf 3'
 release=$(head /etc/os-release -n 1 | cut -d '"' -f 2)
 
 case $release in 
-	"Arch Linux"|"Antergos Linux"|"Manjaro Linux")
+	"Arch Linux"|"Antergos Linux"|"Manjaro Linux"|"Arch Linux 32")
 
 		echo -e "\n$($cyan)Installing required packages"
 		sudo pacman -Sy i3-wm i3blocks i3lock dmenu scrot alsa-utils sysstat acpi feh playerctl xorg-xbacklight rxvt-unicode urxvt-perls adapta-gtk-theme papirus-icon-theme lxappearance
